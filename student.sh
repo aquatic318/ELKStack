@@ -1,4 +1,4 @@
-curl -XPOST '192.168.16.114:9200/school/student/_bulk' -d '
+curl  -H "Content-Type: application/json" -XPOST '192.168.52.32:9200/school/student/_bulk' -d '
 { "index": { "_id": 1 }}
 { "name" : "liubei", "age" : 20 , "sex": "boy", "birth": "1996-01-02" , "about": "i like diaocan he girl" }
 { "index": { "_id": 2 }}
