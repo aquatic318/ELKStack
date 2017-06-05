@@ -1,4 +1,4 @@
-curl -XPOST http://192.168.16.114:9200/cars/transactions/_bulk -d '
+curl  -H "Content-Type: application/json" -XPOST http://192.168.52.32:9200/cars/transactions/_bulk -d '
 { "index": {}}
 { "price" : 10000, "color" : "red", "make" : "honda", "sold" : "2017-10-28" }
 { "index": {}}
